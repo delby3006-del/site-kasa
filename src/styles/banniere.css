@@ -1,7 +1,29 @@
-.banniere {
-  position: relative;
+body {
+  margin: 0;
+}
+
+#root {
   width: 100%;
-  height: 300px;
-  overflow: hidden;
-  color: aqua;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo-kasa img {
+  height: 70px;
+}
+
+.nav a {
+  padding-right: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
 }
