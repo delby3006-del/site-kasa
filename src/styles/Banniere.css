@@ -1,0 +1,29 @@
+.banniere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: white;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.titre-banniere {
+  width: 90%;
+  height: auto;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/assets/images/Banbiere-accueil.png");
+  border-radius: 25px;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+}
