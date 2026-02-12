@@ -2,13 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 220px;
   width: 100%;
 }
 
 h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 48px;
   color: white;
   padding-top: 80px;
@@ -16,7 +14,7 @@ h1 {
 }
 
 .titre-banniere {
-  width: 90%;
+  width: 100%;
   height: auto;
   text-align: center;
   background-image:
