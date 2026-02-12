@@ -1,7 +1,7 @@
 import "../styles/App.css";
-import Banniere from "./Banniere.jsx";
+import Header from "./Header.jsx";
 
 function App() {
-  return <Banniere />;
+  return <Header />;
 }
 export default App;

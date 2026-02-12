@@ -1,5 +1,5 @@
-import "../styles/banniere.css";
-export default function Banniere() {
+import "../styles/Header.css";
+export default function Header() {
   return (
     <header className="header">
       <div className="logo-kasa">
