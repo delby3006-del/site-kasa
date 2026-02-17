@@ -1,9 +1,8 @@
 .main {
   width: 100%;
   margin-top: 20px;
-  margin-right: 20px;
-  height: 800px;
-  background-color: #f6f6f6;
+  height: 100%;
+  background-color: #94cc71;
   border-radius: 25px;
 }
 
@@ -11,14 +10,13 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 50px;
   justify-content: space-between;
 }
 
 .conteneur div {
   background: linear-gradient(#ff6060, #ff6050);
   padding: 20px;
-  width: 340px;
-  height: 340px;
+  max-height: 100%;
+  margin: 25px;
   border-radius: 10px;
 }
