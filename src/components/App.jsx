@@ -10,9 +10,9 @@ function App() {
       <div className="main-conteneur">
         <Header />
         <Banniere />
-        <div>
-          <Conteneur />
-        </div>
+        {/* <div> */}
+        <Conteneur />
+        {/* </div> */}
       </div>
     </>
   );

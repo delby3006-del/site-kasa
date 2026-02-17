@@ -2,21 +2,13 @@
   width: 100%;
   margin-top: 20px;
   height: 100%;
-  background-color: #94cc71;
+  background-color: #f6f6f6;
   border-radius: 25px;
 }
 
-.conteneur {
+/* .conteneur {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
-}
-
-.conteneur div {
-  background: linear-gradient(#ff6060, #ff6050);
-  padding: 20px;
-  max-height: 100%;
-  margin: 25px;
-  border-radius: 10px;
-}
+} */

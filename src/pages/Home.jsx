@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../components/Cards";
+import "../styles/Home.css";
 
 function Home() {
   const [logements, setLogements] = useState([]);
@@ -22,18 +23,16 @@ function Home() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
-      <section className="grid-logements">
-        {logements.map((logement) => (
-          <Card
-            key={logement.id}
-            id={logement.id}
-            title={logement.title}
-            cover={logement.cover}
-          />
-        ))}
-      </section>
-    </div>
+    <section className="grid-logements">
+      {logements.map((logement) => (
+        <Card
+          key={logement.id}
+          id={logement.id}
+          title={logement.title}
+          cover={logement.cover}
+        />
+      ))}
+    </section>
   );
 }
 
