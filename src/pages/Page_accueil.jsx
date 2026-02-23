@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import Card from "../components/Cards";
-import "../styles/Home.css";
+import Card from "../components/Cartes.jsx";
+import "../styles/Page_accueil.css";
+import Cartes from "../components/Cartes.jsx";
 
 function Home() {
   const [logements, setLogements] = useState([]);
@@ -25,7 +26,7 @@ function Home() {
   return (
     <section className="grid-logements">
       {logements.map((logement) => (
-        <Card
+        <Cartes
           key={logement.id}
           id={logement.id}
           title={logement.title}

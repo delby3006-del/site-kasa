@@ -1,6 +1,6 @@
 import "../styles/Conteneur.css";
 // import { BrowserRouter } from "react-router-dom";
-import Home from "../pages/home.jsx";
+import Home from "../pages/Page_accueil.jsx";
 
 export default function Conteneur() {
   return (

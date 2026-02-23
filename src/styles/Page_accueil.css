@@ -5,8 +5,7 @@
   justify-content: space-between;
 }
 
-.grid-logements .card {
-  /* background: linear-gradient(#ff6060, #ff6050); */
+.grid-logements .cartes {
   padding: 20px;
   margin: 25px;
   border-radius: 10px;
@@ -14,24 +13,24 @@
   max-height: 100%;
 }
 
-.grid-logements .card {
+.grid-logements .cartes {
   text-decoration: none;
   color: inherit;
 }
 
-.grid-logements .card img {
+.grid-logements .cartes img {
   width: 100%;
   height: auto;
+  min-height: 235px;
   border-radius: 10px;
+  object-fit: cover;
 }
 
-.grid-logements .card h2 {
+.grid-logements .cartes h2 {
   margin-top: 10px;
   font-size: 18px;
   color: black;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
