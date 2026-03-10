@@ -1,22 +1,20 @@
 import "../styles/App.css";
 import Header from "./Header.jsx";
-import Banniere from "./Banniere.jsx";
-import Conteneur from "./Conteneur.jsx";
-import { Footer } from "./Footer.jsx";
-// import Home from "../pages/home.jsx";
+import Footer from "./Footer.jsx";
+import AppRoutes from "./routes.jsx";
 
 function App() {
   return (
-    <>
-      <div className="main-conteneur">
-        <Header />
-        <Banniere />
-        <Conteneur />
-        <div className="footer-conteneur">
-          <Footer />
-        </div>
+    <div className="main-conteneur">
+      <Header />
+
+      <AppRoutes />
+
+      <div className="footer-conteneur">
+        <Footer />
       </div>
-    </>
+    </div>
   );
 }
+
 export default App;

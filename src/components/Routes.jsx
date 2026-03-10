@@ -1,31 +1,22 @@
-import { createBrowserRouter } from "react-router-dom";
+// src/components/Routes.jsx
+import { Routes, Route, Navigate } from "react-router-dom";
 
-import RootLayout from "./pages/RootLayout";
-import Home from "./pages/Page_accueil.jsx";
-import About from "./pages/Page_a_propos.jsx";
-import Housing from "./pages/Page_logement";
-import NotFound from "./pages/Page_non_trouvee";
+import Page_accueil from "../pages/Page_accueil.jsx";
+import PagePartLogement from "../pages/Page_logement.jsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <RootLayout />,
-    errorElement: <NotFound />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "about",
-        element: <About />,
-      },
-      {
-        path: "logement/:id",
-        element: <Housing />,
-      },
-    ],
-  },
-]);
+function AppRoutes() {
+  return (
+    <Routes>
+      {/* Accueil */}
+      <Route path="/" element={<Page_accueil />} />
 
-export default router;
+      {/* Fiche logement */}
+      <Route path="/logement/:id" element={<PagePartLogement />} />
+
+      {/* 404 */}
+      <Route path="*" element={<div>Page introuvable</div>} />
+    </Routes>
+  );
+}
+
+export default AppRoutes;

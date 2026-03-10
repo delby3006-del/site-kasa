@@ -1,5 +1,5 @@
 import "../styles/Footer.css";
-export function Footer() {
+function Footer() {
   return (
     <footer className="footer">
       <img
@@ -10,3 +10,5 @@ export function Footer() {
     </footer>
   );
 }
+
+export default Footer;
