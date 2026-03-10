@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
-// import Logement from "../components/Logement.jsx";
 
 function PageLogement() {
   const { id } = useParams();

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import Cartes from "../components/Cartes.jsx";
-import "../styles/conteneur.css";
+import Cartes from "../Cartes/Cartes.jsx";
+import "./Conteneur_Cartes.css";
 
-function Conteneur() {
+function ConteneurCartes() {
   const [logements, setLogements] = useState([]);
   const [error, setError] = useState(null);
 
@@ -36,4 +36,4 @@ function Conteneur() {
   );
 }
 
-export default Conteneur;
+export default ConteneurCartes;

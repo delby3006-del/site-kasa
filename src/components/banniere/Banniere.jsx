@@ -1,4 +1,4 @@
-import "Banniere.css";
+import "./Banniere.css";
 
 export default function Banniere() {
   return (

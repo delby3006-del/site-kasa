@@ -6,7 +6,9 @@ function Cartes({ id, title, cover }) {
     <Link to={`/logement/${id}`} className="cartes">
       <article>
         <img src={cover} alt={title} className="cartes_img" />
-        <h2 className="cartes_titre">{title}</h2>
+        <div className="degrader_cartes">
+          <h2 className="cartes_titre">{title}</h2>
+        </div>
       </article>
     </Link>
   );
