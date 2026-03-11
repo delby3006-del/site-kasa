@@ -1,4 +1,6 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <header className="header">
@@ -6,12 +8,12 @@ export default function Header() {
         <img src="/src/assets/images/LOGO.png" alt="Logo Kasa" />
       </div>
       <nav className="nav" aria-label="Navigation principale">
-        <a href="/" className="nav-link">
+        <Link to="/" className="nav-link">
           Accueil
-        </a>
-        <a href="/about" className="nav-link">
+        </Link>
+        <Link to="/about" className="nav-link">
           A Propos
-        </a>
+        </Link>
       </nav>
     </header>
   );

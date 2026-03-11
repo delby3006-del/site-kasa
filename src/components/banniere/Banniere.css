@@ -12,14 +12,11 @@
   background-size: cover;
 }
 
-h1 {
+.titre-banniere {
   font-size: 48px;
   color: white;
   padding-top: 80px;
   padding-bottom: 80px;
-}
-
-.titre-banniere {
   width: 100%;
   height: auto;
   text-align: center;

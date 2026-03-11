@@ -11,18 +11,11 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
-}
-
-.grid-logements .cartes {
+  gap: 30px;
   padding: 20px;
-  border-radius: 10px;
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .grid-logements .cartes {
-  text-decoration: none;
-  color: inherit;
   position: relative;
 }
 
@@ -34,21 +27,20 @@
 }
 
 .grid-logements .cartes .degrader_cartes {
-  width: 90%;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 6%;
-  background: linear-gradient(
-    rgba(237, 231, 231, 0.524),
-    rgba(23, 22, 22, 0.492)
-  );
+  top: 0px;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.245));
   border-radius: 10px;
 }
 
-article .degrader_cartes .cartes_titre {
+.cartes .degrader_cartes .cartes_titre {
   font-size: 18px;
   color: white;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 65%;
+  padding-top: 250px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }

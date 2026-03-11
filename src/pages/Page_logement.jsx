@@ -1,6 +1,6 @@
-import PageLogement from "../components/Logements/Logement.jsx";
+import Logement from "../components/Logements/Logement.jsx";
 
 function PagePartLogement() {
-  return <PageLogement />;
+  return <Logement />;
 }
 export default PagePartLogement;
