@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Page_accueil from "../pages/Page_accueil.jsx";
 import PagePartLogement from "../pages/Page_logement.jsx";
+import Page_apropos from "../pages/Page-apropos.jsx";
 
 function AppRoutes() {
   return (
@@ -12,6 +13,9 @@ function AppRoutes() {
 
       {/* Fiche logement */}
       <Route path="/logement/:id" element={<PagePartLogement />} />
+
+      {/* A Propos */}
+      <Route path="/apropos" element={<Page_apropos />} />
 
       {/* 404 */}
       <Route path="*" element={<div>Page introuvable</div>} />

@@ -1,18 +1,53 @@
+import "./volet_logement.css";
+
+import { useState } from "react";
+
 function VoletLogement({ descriptions, equipement }) {
+  const [openDesc, setOpenDesc] = useState(false);
+  const [openEquip, setOpenEquip] = useState(false);
+
   return (
     <div className="volet-logement">
       <div className="volet-description">
-        <h3 className="titre-volet">Description</h3>
-        <p className="info-volet">{descriptions}</p>
-      </div>
-      <div className="volet-equipement">
-        <h3 className="titre-volet">Equipement</h3>
+        <div className="titre-volet" onClick={() => setOpenDesc(!openDesc)}>
+          <h3 id="titre">Description</h3>
+          <span>
+            {openDesc ? (
+              <i class="fa-solid fa-angle-down"></i>
+            ) : (
+              <i class="fa-solid fa-angle-up"></i>
+            )}
+          </span>
+        </div>
 
-        <ul className="info-volet">
-          {equipement.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+        {openDesc && (
+          <div className="contenu-description">
+            <p>{descriptions}</p>
+          </div>
+        )}
+      </div>
+
+      <div className="volet-equipement">
+        <div className="titre-volet" onClick={() => setOpenEquip(!openEquip)}>
+          <h3 id="titre">Équipements</h3>
+          <span>
+            {openDesc ? (
+              <i class="fa-solid fa-angle-down"></i>
+            ) : (
+              <i class="fa-solid fa-angle-up"></i>
+            )}
+          </span>
+        </div>
+
+        {openEquip && (
+          <div className="contenu-equipement">
+            <ul>
+              {equipement.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

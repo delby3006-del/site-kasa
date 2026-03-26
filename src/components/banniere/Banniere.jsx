@@ -7,3 +7,7 @@ export default function Banniere() {
     </div>
   );
 }
+
+export function BanniereAPropos() {
+  return <div className="banniere-a-propos"></div>;
+}

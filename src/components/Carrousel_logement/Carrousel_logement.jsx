@@ -10,8 +10,8 @@ function Carousel({ pictures, title }) {
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === pictures.length - 1 ? 0 : prevIndex + 1,
+    setCurrentIndex((nextIndex) =>
+      nextIndex === pictures.length - 1 ? 0 : nextIndex + 1,
     );
   };
 

@@ -22,3 +22,17 @@
   text-align: center;
   margin: auto;
 }
+
+.banniere-a-propos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 220px;
+  width: 100%;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/src/assets/images/Banniere-propos.png");
+  border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+}
