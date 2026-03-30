@@ -5,27 +5,6 @@
   margin-top: 20px;
 }
 
-.volet-description,
-.volet-equipement {
-  width: 50%;
-  background-color: #f6f6f6;
-}
-
-.titre-volet {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ff6060;
-  padding: 0px 15px;
-  border-radius: 10px;
-}
-
-#titre,
-span {
-  font-size: 18px;
-  color: white;
-}
-
 .contenu-description,
 .contenu-equipement {
   padding-left: 25px;

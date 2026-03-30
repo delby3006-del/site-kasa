@@ -5,7 +5,10 @@ import "../styles/Page_accueil.css";
 function Page_accueil() {
   return (
     <div>
-      <Banniere />
+      <div className="banniere">
+        <Banniere accueil="url(/src/assets/images/Banbiere-accueil.png)" />
+        <h1 className="titre-banniere">Chez vous, partout et ailleurs</h1>
+      </div>
       <div className="conteneur_cartes">
         <ConteneurCartes />
       </div>

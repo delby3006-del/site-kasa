@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Page_accueil from "../pages/Page_accueil.jsx";
 import PagePartLogement from "../pages/Page_logement.jsx";
-import Page_apropos from "../pages/Page-apropos.jsx";
+import PageAPropos from "../pages/Page_apropos.jsx";
 
 function AppRoutes() {
   return (
@@ -15,7 +15,7 @@ function AppRoutes() {
       <Route path="/logement/:id" element={<PagePartLogement />} />
 
       {/* A Propos */}
-      <Route path="/apropos" element={<Page_apropos />} />
+      <Route path="/A_Propos" element={<PageAPropos />} />
 
       {/* 404 */}
       <Route path="*" element={<div>Page introuvable</div>} />

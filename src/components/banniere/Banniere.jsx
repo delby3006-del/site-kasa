@@ -1,13 +1,14 @@
 import "./Banniere.css";
 
-export default function Banniere() {
+export default function Banniere({ accueil, apropos, children }) {
   return (
-    <div className="banniere">
-      <h1 className="titre-banniere">Chez vous, partout et ailleurs</h1>
+    <div
+      className="image-banniere"
+      style={{ backgroundImage: apropos || accueil }}
+    >
+      <div className="overlay"></div>
+
+      <div className="titre-banniere">{children}</div>
     </div>
   );
-}
-
-export function BanniereAPropos() {
-  return <div className="banniere-a-propos"></div>;
 }
